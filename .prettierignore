@@ -1,0 +1,9 @@
+dist
+node_modules
+package.json
+.next
+README.md
+package-lock.json
+.eslintrc.json
+.prettierrc
+next-env.d.ts
