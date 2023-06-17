@@ -6,7 +6,7 @@ import { MdLightMode } from 'react-icons/md';
 
 type Props = {};
 
-export default function DarkModeToggle({}: Props) {
+export default function ThemeToggle({}: Props) {
   const { theme, systemTheme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
   const [bTheme, setbTheme] = useState(
