@@ -3,6 +3,7 @@ import NavItem from './NavItem';
 import { AiFillHome } from 'react-icons/ai';
 import { BsFillInfoCircleFill } from 'react-icons/bs';
 import Link from 'next/link';
+import DarkModeToggle from './DarkModeToggle';
 
 export default function Navbar() {
   return (
@@ -11,7 +12,10 @@ export default function Navbar() {
         <NavItem title="HOME" address="/" Icon={AiFillHome} />
         <NavItem title="ABOUT" address="/about" Icon={BsFillInfoCircleFill} />
       </div>
-      <div>
+      <div className="flex items-center space-x-5">
+        <li className="list-none">
+          <DarkModeToggle />
+        </li>
         <li className="list-none">
           <Link href="/">
             <h2 className="text-2xl">
