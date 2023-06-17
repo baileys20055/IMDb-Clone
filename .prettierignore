@@ -7,3 +7,4 @@ package-lock.json
 .eslintrc.json
 .prettierrc
 next-env.d.ts
+.env.local
