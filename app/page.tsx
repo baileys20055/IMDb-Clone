@@ -1,4 +1,4 @@
-export const dynamic = "force-dynamic";
+export const dynamic = "force-dynamic"
 import MovieResult from "@/components/MovieResult";
 
 const API_KEY = process.env.API_KEY;
