@@ -4,9 +4,8 @@ import React, { useEffect, useState } from 'react';
 import { IoMdMoon } from 'react-icons/io';
 import { MdLightMode } from 'react-icons/md';
 
-type Props = {};
 
-export default function ThemeToggle({}: Props) {
+export default function ThemeToggle() {
   const { theme, systemTheme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
   const [bTheme, setbTheme] = useState(
