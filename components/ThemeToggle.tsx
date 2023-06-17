@@ -31,7 +31,10 @@ export default function ThemeToggle({}: Props) {
 
   return (
     <>
-      <button className="z-[100] flex items-center" onClick={() => handleClick()}>
+      <button
+        className="z-[100] flex items-center"
+        onClick={() => handleClick()}
+      >
         {mounted &&
           (theme === 'dark' || bTheme === 'dark' ? (
             <MdLightMode className="text-2xl hover:text-yellow-400" />
