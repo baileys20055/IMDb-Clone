@@ -7,8 +7,8 @@ import { MdLightMode } from 'react-icons/md';
 
 export default function ThemeToggle() {
   const { theme, systemTheme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
-  const [bTheme, setbTheme] = useState(
+  const [ mounted, setMounted ] = useState(false);
+  const [ bTheme, setbTheme ] = useState(
     typeof window === 'undefined' ? systemTheme : localStorage.getItem('theme')
   );
 
@@ -23,6 +23,7 @@ export default function ThemeToggle() {
   useEffect(() => {
     setMounted(true), [];
   });
+
   useEffect(() => {
     localStorage.setItem('theme', theme as string);
     setbTheme(theme as string);
