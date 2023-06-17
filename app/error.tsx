@@ -1,7 +1,5 @@
 "use client";
-import { error } from 'console';
 import { useEffect } from 'react';
-
 import React from 'react'
 
 type Props = { error: Error, reset: any }
