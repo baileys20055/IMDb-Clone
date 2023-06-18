@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import { FiThumbsUp } from "react-icons/fi";
+import { FiThumbsUp } from 'react-icons/fi';
 
 type Props = { result: any };
 
@@ -25,10 +25,10 @@ export default function Card({ result }: Props) {
           <h2 className="truncate text-lg font-bold">
             {result.title || result.name}
           </h2>
-          <p className='inline-flex items-center text-sm align-bottom'>
+          <p className="inline-flex items-center text-sm align-bottom">
             {result.release_date || result.first_air_date}
-          <FiThumbsUp className='h-5 mr-1 ml-3' />
-          {result.vote_count}
+            <FiThumbsUp className="h-5 mr-1 ml-3" />
+            {result.vote_count}
           </p>
         </div>
       </Link>
