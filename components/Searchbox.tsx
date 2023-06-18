@@ -12,6 +12,7 @@ export default function Searchbox({}: Props) {
     e.preventDefault();
     if (!search) return;
     router.push(`/search/${search}`);
+    setSearch("");
   }
 
   return (
