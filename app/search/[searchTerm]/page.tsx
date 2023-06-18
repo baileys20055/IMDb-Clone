@@ -5,7 +5,7 @@ type Props = { params: any };
 
 export default async function SearchPage({ params }: Props) {
   const res = await fetch(
-    `https://api.themoviedb.org/3/search/movie?api_key=${process.env.API_KEY}&query=${params.searchTerm}&language=en-US&page=1`,
+    `https://api.themoviedb.org/3/search/movie?api_key=${process.env.API_KEY}&query=${params.searchTerm}&language=en-US&include_adult=false`,
     { next: { revalidate: 10000 } }
   );
 
