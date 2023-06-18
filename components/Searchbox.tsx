@@ -1,5 +1,5 @@
 'use client';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import React from 'react';
 
@@ -12,7 +12,7 @@ export default function Searchbox({}: Props) {
     e.preventDefault();
     if (!search) return;
     router.push(`/search/${search}`);
-    setSearch("");
+    setSearch('');
   }
 
   return (
