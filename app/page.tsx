@@ -37,7 +37,7 @@ export default async function Home({ searchParams }: Props) {
   }
 
   const data: any = await res.json();
-  const results = data.results;
+  const results: MovieInfo = data.results;
 
   return (
     <div>

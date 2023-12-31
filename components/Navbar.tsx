@@ -8,7 +8,7 @@ import ThemeToggle from './ThemeToggle';
 export default function Navbar() {
   return (
     <nav className="flex justify-between mx-2 max-w-6xl sm:mx-auto items-center py-6">
-      <div className="inline-flex float-left space-x-8">
+      <div className="inline-flex float-left gap-4">
         <NavItem title="HOME" address="/" Icon={AiFillHome} />
         <NavItem title="ABOUT" address="/about" Icon={BsFillInfoCircleFill} />
       </div>

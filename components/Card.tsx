@@ -16,6 +16,7 @@ export default function Card({ result }: Props) {
           alt="Image not available"
           width={500}
           height={300}
+          priority={true}
           className="sm:rounded-t-lg group-hover:opacity-80 transition-opacity duration-200 max-w-full h-auto"
           placeholder="blur"
           blurDataURL="/spinner.svg"
